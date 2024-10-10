@@ -1,12 +1,14 @@
 
-import './App.css';
+import React from 'react';
+import Home from './pages/Home/Home'; // Ensure the import path is correct
+import './App.css'; // Import global styles
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-     <h1>helow Lilian</h1>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;
