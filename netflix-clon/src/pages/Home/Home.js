@@ -31,12 +31,13 @@ export default Home;*/ // Ensure this line is present
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import Banner from '../../components/Banner/Banner';
 
 const Home = () => {
     return (
         <>
             <Header />
-            {/* Main content can be added here in the future */}
+            <Banner />
             <Footer />
         </>
     );
