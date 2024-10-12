@@ -1,4 +1,5 @@
 {
+  "homepage": "https://abebaw6136.github.io/Netflixclone_Clone_2024",
   "name": "netflix-clon",
   "version": "0.1.0",
   "private": true,
@@ -14,9 +15,12 @@
   },
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +44,8 @@
     "@babel/plugin-transform-nullish-coalescing-operator": "^7.25.7",
     "@babel/plugin-transform-optional-chaining": "^7.25.7",
     "@babel/preset-env": "^7.25.7",
-    "@babel/preset-react": "^7.25.7"
+    "@babel/preset-react": "^7.25.7",
+    "gh-pages": "^6.2.0"
   },
   "resolutions": {
     "@babel/core": "7.19.6",
@@ -49,5 +54,5 @@
     "@babel/helper-compilation-targets": "7.19.0",
     "@babel/helper-module-transforms": "7.19.6",
     "babel-loader": "8.2.5"
-  }
+  } 
 }
